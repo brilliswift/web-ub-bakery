@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Golos+Text&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+nav a:hover {
+   font-weight: bold;
+   color: green;
+   
+}
+
+.jumbotron {
+  padding: 30px;
+  background-color: #9DC08B;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+li {
+    display: inline;
+    margin-left: 5px;
+}
+
+nav a {
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul {
+  padding-inline: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+nav li {
+  list-style-type: none;
+  text-align: right;
+}
+
+nav {
+  background-color: #AD8E70;;
+  padding: 5px;
+}
+
+
+body {
+    font-family: 'Quicksand', serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+  color:green;
+  font-size: 3em;
+}
+ 
+h2 {
+   color: #B99B6B;
+   text-align: center;
+}
+
+h3 {
+  text-align: center;
+  background-color: #B99B6B;
+}
+
+p{
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: 'Gloock', serif;
+  
+}
+ 
+table {
+  text-align: center;
+  width: 100%;
+}
+.featured-image {
+   width: 100%;
+   max-height: 500px;
+   object-position: center;
+}
+
+.card {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 9px;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+#content {
+  float: left;
+  width: 75%;
+}
+
+main { 
+  padding: 5px;
+  overflow: auto;
+}
+
+aside {
+  float: right;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 25%;
+}
+
+.box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+   font-family:'Quicksand', serif;
+   padding: 20px;
+   color: white;
+   background-color: #9DC08B;
+}
+
+* {
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1000px) {
+#content,
+  aside {
+    width: 5%;
+  }
+
+}
