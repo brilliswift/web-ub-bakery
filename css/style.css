@@ -16,6 +16,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: #000000;
+  /*min-height: 2000px; */
 }
 
 /* Navbar */
@@ -24,9 +25,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.4rem 7%;
+  padding: 1rem 4%;
   background-color: rgba(63, 42, 15, 0.8);
-  border-bottom: 1px solid #9b6323a1;
+  border-bottom: 1px solid #9b6323fd;
   position: fixed;
   top: 0;
   left: 0;
@@ -81,6 +82,67 @@ body {
   display: none;
 }
 
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/header-bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgb(177, 149, 112) 3%,
+    rgba(185, 151, 117, 0.048) 25%
+  );
+}
+
+.hero .content {
+  padding: 1.4rem 7%;
+  max-width: 60rem;
+}
+
+.hero .content h1 {
+  font-size: 3em;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  line-height: 1.3;
+}
+
+.hero .content h1 span {
+  color: rgba(175, 141, 95, 0.904);
+}
+
+.hero .content p {
+  font-size: 1.7rem;
+  margin-top: 1rem;
+  line-height: 1.4;
+  font-weight: 100;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.hero .content .cta {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: #c0905aee;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
 /* Media Queries */
 
 /* Laptop */
@@ -120,6 +182,10 @@ body {
     margin: 1.5rem;
     padding: 0.5rem;
     font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
   }
 }
 
